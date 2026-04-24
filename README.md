@@ -23,13 +23,47 @@ Then, run the development server:
 ```bash
 npm run dev
 ```
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (Utility-first CSS)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: [Next/font](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) (Nunito & Nunito Sans)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Decisions & Technical Assumptions
+- **Custom Swiper Logic**: Implemented a responsive testimonial carousel using pure CSS variables (`--items`) and Tailwind prefixes. This avoids heavy external dependencies while maintaining the "3.5 cards visible" requirement on larger screens.
+- **Breakpoint Configuration**: Aligned with the assessment spec in `globals.css`:
+  - `sm`: 425px (Mobile)
+  - `md`: 768px (Tablet)
+  - `lg`: 1280px (Desktop)
+- **Component Architecture**: Broke the page into 10+ modular components located in `@/components` to ensure maintainability and clean code structure.
+- **Accessibility (A11y)**: 
+  - Used semantic HTML5 elements (`<nav>`, `<main>`, `<section>`, `<footer>`).
+  - Ensured all interactive elements have `aria-label` or descriptive text for screen readers.
+  - Implemented keyboard-navigable focus states for buttons and links.
+- **Image Optimization**: All images utilize `next/image` with appropriate `sizes` attributes to ensure optimal loading performance across all device types.
 
-## 📁 Project Structure
-- `app/`: Contains the main layout and page entry point.
-- `components/`: Modular UI components (Hero, Navbar, Footer, etc.).
-- `public/`: Static assets including images and brand logos.
+## ⚙️ Setup Instructions
 
-## 📄 License
-This project is for assessment purposes.
+1. **Clone the repository**:
+   ```bash
+   git clone [your-repo-url]
+   cd tobams
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+---
+*Developed by Tobams Group Frontend Intern Candidate.*

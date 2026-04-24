@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/Button";
 
@@ -25,7 +24,7 @@ export const LMSSection = () => {
           <div className="relative mx-auto aspect-square w-full max-w-[450px] overflow-hidden rounded-full md:mx-0 md:max-w-[500px] lg:max-w-[720px]">
             <Image
               src="/management.png"
-              alt="Professional team"
+              alt="Diverse professional team collaborating in a modern workspace"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/Button";
@@ -85,8 +85,8 @@ export const Testimonials = () => {
                         <p className="text-sm text-gray-500">{testimonial.role}</p>
                       </div>
                     </div>
-                    <p className="text-[14px] md:text-[16px] leading-relaxed text-gray-700 italic">
-                      "{testimonial.content}"
+                    <p className="text-[14px] md:text-[18px] leading-[150%] text-[var(--color-main-text)]">
+                      {testimonial.content}
                     </p>
                   </div>
                 </div>

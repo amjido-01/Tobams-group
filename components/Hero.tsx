@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "./ui/Button";
 
 export const Hero = () => {
@@ -11,7 +10,7 @@ export const Hero = () => {
     >
       <Image
         src="/hero.jpg"
-        alt="A professional woman working with vibrant data dashboards in a dark tech environment"
+        alt="Collaborative team working together on the TG Academy platform"
         fill
         priority
         sizes="100vw"

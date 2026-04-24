@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Zap, ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/Button";
 
