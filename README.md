@@ -35,18 +35,20 @@ npm run dev
   - `sm`: 425px (Mobile)
   - `md`: 768px (Tablet)
   - `lg`: 1280px (Desktop)
-- **Component Architecture**: Broke the page into 10+ modular components located in `@/components` to ensure maintainability and clean code structure.
-- **Accessibility (A11y)**: 
-  - Used semantic HTML5 elements (`<nav>`, `<main>`, `<section>`, `<footer>`).
-  - Ensured all interactive elements have `aria-label` or descriptive text for screen readers.
-  - Implemented keyboard-navigable focus states for buttons and links.
-- **Image Optimization**: All images utilize `next/image` with appropriate `sizes` attributes to ensure optimal loading performance across all device types.
+- **Modular Component Architecture**: Developed a centralized, reusable `Button` UI component with multiple variants (`primary`, `secondary`, `white`, `ghost`). This follows professional design system patterns and ensures visual consistency across the entire application.
+- **Zero-CLS Typography**: Utilized `next/font` with the `swap` strategy and local variable injection. This ensures zero Cumulative Layout Shift (CLS) during initial page load, optimizing performance and user experience.
+- **Advanced A11y (Accessibility)**: 
+  - Implemented custom `focus-visible` ring styles to ensure high visibility for keyboard users.
+  - Maintained a strict heading hierarchy (`h1` -> `h2` -> `h3`) for screen readers and SEO.
+  - Integrated `aria-expanded` and `aria-controls` for the mobile navigation toggle.
+- **Mobile-First Responsive Strategy**: Strictly followed a mobile-first approach, using Tailwind's default mobile classes and layering `md:` and `lg:` prefixes only when necessary for tablet and desktop refinements.
+- **Image Optimization**: All images utilize `next/image` with appropriate `sizes` attributes and `priority` flags for LCP (Largest Contentful Paint) elements, ensuring optimal loading performance.
 
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**:
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/amjido-01/Tobams-group.git
    cd tobams
    ```
 
