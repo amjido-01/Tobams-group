@@ -32,7 +32,7 @@ export const Navbar = () => {
       aria-label="Main navigation"
       role="navigation"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         <div className="flex h-16 items-center justify-between py-[40px] md:h-[48px]">
           <Link
             href="/"
@@ -92,8 +92,8 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden border-t border-gray-100 md:block">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-10">
+      <div className="hidden border-t">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
           <ul
             className="flex items-center justify-center gap-1 border-b border-[#DDD0DA] py-[10px]"
             role="list"

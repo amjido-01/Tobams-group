@@ -51,7 +51,7 @@ export const Testimonials = () => {
 
   return (
     <section className="bg-[#FBFBFB] py-16 lg:py-24 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         <h2 className="mb-12 text-center font-display text-3xl font-bold text-[#1A1A1A] md:text-4xl">
           Testimonials
         </h2>

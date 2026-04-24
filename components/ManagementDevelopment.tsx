@@ -12,7 +12,7 @@ export const ManagementDevelopment = () => {
 
   return (
     <section className="mb-[24px] bg-white py-12 lg:py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         <div className="overflow-hidden rounded-[15px] bg-[#2C0922] p-5 md:p-10 lg:p-16">
           <h2 className="mb-[20px] leading-[150%] block text-center font-display text-[16px] font-semibold text-white md:hidden">
             Management Development Program

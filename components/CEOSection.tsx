@@ -15,7 +15,7 @@ export const CEOSection = () => {
 
   return (
     <section className="py-12 md:py-20 lg:py-24">
-      <div className="mx-auto bg-[#EF435333] rounded-[15px] p-5 md:p-10 max-w-[96%] px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1440px] bg-[#EF435333] rounded-[15px] p-5 md:p-10 px-4 sm:px-6 lg:px-10">
         
         <div className="mb-10 max-w-5xl">
           <p className="mb-4 text-[14px] italic font-semibold text-[#1671D9] md:text-[20px]">

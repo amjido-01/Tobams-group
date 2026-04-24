@@ -57,7 +57,7 @@ const TrainingSubSection = ({ title, description, imagePath, features, reverse, 
 export const TrainingSections = () => {
   return (
     <section className="bg-white md:mb-[64px]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         
         <TrainingSubSection
           title="Corporate Trainings"

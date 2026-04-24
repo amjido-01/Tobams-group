@@ -43,7 +43,7 @@ export const Footer = () => {
   return (
     <div className="w-full bg-[#1a0b16] text-white">
       <div className="border-b border-white/10 py-10 bg-[#1D0617]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="text-center md:text-left">
               <p className="md:text-[18px] text-[14px] font-regular opacity-80">Ready to be a part of something extraordinary?</p>
@@ -62,7 +62,7 @@ export const Footer = () => {
       </div>
 
       <div className="py-16 lg:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
             
             <div className="flex flex-col gap-8">
@@ -175,7 +175,7 @@ export const Footer = () => {
       </div>
 
       <div className="border-t border-white/10 py-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <p className="text-[14px] font-light leading-[24px] md:text-[16px]">
               Copyright © Tobams Group, {currentYear}. All rights reserved.

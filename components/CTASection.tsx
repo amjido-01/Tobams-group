@@ -4,7 +4,7 @@ import { Button } from "./ui/Button";
 export const CTASection = () => {
   return (
     <section className="bg-white py-12 lg:py-20 mb-[24px] md:mb-[60px]">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col items-center justify-center rounded-[8px] bg-[var(--color-primary)] px-6 py-12 text-center text-white md:py-16">
           
           <div className="hidden md:block">

@@ -15,7 +15,7 @@ export const LMSSection = () => {
 
   return (
     <section className="bg-[#5712441A] py-16 lg:py-24 mb-[24px] md:mb-[40px]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         <h2 className="mb-[24px] leading-[150%] block font-display text-[20px] md:text-[40px] font-semibold text-[var(--color-primary)] md:hidden">
           Learning Management System
         </h2>
