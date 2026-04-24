@@ -46,8 +46,8 @@ export const Footer = () => {
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="text-center md:text-left">
-              <p className="md:text-[18px] text-[14px] font-regular opacity-80">Ready to be a part of something extraordinary?</p>
-              <h2 className="mt-1 text-[20px] font-semibold md:text-[32px] leading-[130%]">Let&apos;s work together to create a difference</h2>
+              <p className="md:text-lg text-sm font-regular opacity-80">Ready to be a part of something extraordinary?</p>
+              <h2 className="mt-1 text-xl font-semibold md:text-[32px] leading-[130%]">Let&apos;s work together to create a difference</h2>
             </div>
             <Button
               href="#contact"
@@ -66,10 +66,10 @@ export const Footer = () => {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
             
             <div className="flex flex-col gap-8">
-              <Link href="/" className="md:mb-[24px]">
-                <Image src="/tobams.png" alt="Tobams Group" width={160} height={50} style={{ height: "auto" }} className="" />
+              <Link href="/" className="md:mb-6">
+                <Image src="/tobams.png" alt="Tobams Group" width={160} height={50} style={{ height: "auto" }} />
               </Link>
-              <p className="text-[14px] md:text-[16px] leading-[150%] text-[#F8F8F8] font-regular mb-[24px]">
+              <p className="text-sm md:text-base leading-[150%] text-[#F8F8F8] font-regular mb-6">
                 Tobams Group is an innovative consultancy firm reshaping the future of tech talent 
                 development in Africa, specializing in talent acquisition, internships, and skill 
                 development with a global perspective.
@@ -88,8 +88,8 @@ export const Footer = () => {
             </div>
 
             <div>
-              <h3 className="mb-[16px] text-[20px] font-bold">What We Do</h3>
-              <ul className="space-y-2 text-[16px] opacity-70">
+              <h3 className="mb-4 text-xl font-bold">What We Do</h3>
+              <ul className="space-y-2 text-base opacity-70">
                 <li><Link href="#" className="hover:opacity-100">Sustainability Services</Link></li>
                 <li><Link href="#" className="hover:opacity-100">Strategy Planning and Implementation</Link></li>
                 <li><Link href="#" className="hover:opacity-100">Tech Talent Solutions</Link></li>
@@ -101,8 +101,8 @@ export const Footer = () => {
             </div>
 
             <div>
-              <h3 className="mb-[16px] text-[20px] font-bold">Company</h3>
-              <ul className="space-y-4 text-[16px] text-white">
+              <h3 className="mb-4 text-xl font-bold">Company</h3>
+              <ul className="space-y-4 text-base text-white">
                 <li><Link href="#" className="hover:opacity-100">About</Link></li>
                 <li><Link href="#" className="hover:opacity-100">Jobs</Link></li>
                 <li><Link href="#" className="hover:opacity-100">Projects</Link></li>
@@ -117,8 +117,8 @@ export const Footer = () => {
             </div>
 
             <div>
-              <h3 className="mb-[16px] text-[20px] font-bold">Solution</h3>
-              <ul className="space-y-4 text-[16px] text-white">
+              <h3 className="mb-4 text-xl font-bold">Solution</h3>
+              <ul className="space-y-4 text-base text-white">
                 <li><Link href="#" className="hover:opacity-100">Tobams Group Academy</Link></li>
                 <li><Link href="#" className="hover:opacity-100">Help a Tech Talent</Link></li>
                 <li><Link href="#" className="hover:opacity-100">Campus Ambassadors Program</Link></li>
@@ -130,41 +130,41 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-16 rounded-[16px] bg-[#1D0617] md:p-10">
+          <div className="mt-16 rounded-2xl bg-[#1D0617] md:p-10">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
               
-              {/* Column 1: United Kingdom (Desktop: 1, Mobile: 2) */}
+              {/* Column 1: United Kingdom */}
               <div className="order-2 md:order-1 md:border-r md:border-white/10 md:pr-12">
-                <h3 className="mb-6 text-[20px] font-bold text-white">Registered Offices</h3>
-                <h4 className="mb-3 text-[16px] font-bold text-[var(--color-secondary)]">United Kingdom</h4>
-                <p className="text-[14px] md:text-[16px] leading-[150%] text-[#F8F8F8] opacity-90 font-regular">
+                <h3 className="mb-6 text-xl font-bold text-white">Registered Offices</h3>
+                <h4 className="mb-3 text-base font-bold text-[var(--color-secondary)]">United Kingdom</h4>
+                <p className="text-sm md:text-base leading-[150%] text-[#F8F8F8] opacity-90 font-regular">
                   07451196 (Registered by Company House) <br />
                   Vine Cottages, 215 North Street, Romford, <br />
                   Essex, United Kingdom, RM1 4QA
                 </p>
               </div>
 
-              {/* Column 2: Nigeria (Desktop: 2, Mobile: 3) */}
+              {/* Column 2: Nigeria */}
               <div className="order-3 md:order-2 md:border-r md:border-white/10 md:pr-12">
-                <div className="hidden lg:block h-[30px] mb-6"></div> {/* Spacer for alignment */}
-                <h4 className="mb-3 text-[16px] font-bold text-[var(--color-secondary)]">Nigeria</h4>
-                <p className="text-[14px] md:text-[16px] leading-[150%] text-[#F8F8F8] opacity-90 font-regular">
+                <div className="hidden lg:block h-8 mb-6"></div>
+                <h4 className="mb-3 text-base font-bold text-[var(--color-secondary)]">Nigeria</h4>
+                <p className="text-sm md:text-base leading-[150%] text-[#F8F8F8] opacity-90 font-regular">
                   RC 1048722 (Registered by the Corporate Affairs Commission) <br />
                   4, Muaz Close, Angwari-Rimi
                 </p>
               </div>
 
-              {/* Column 3: Contact Information (Desktop: 3, Mobile: 1) */}
+              {/* Column 3: Contact Information */}
               <div className="order-1 md:order-3 md:pl-12">
-                <h3 className="mb-6 text-[20px] font-bold text-white">Contact Information</h3>
+                <h3 className="mb-6 text-xl font-bold text-white">Contact Information</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <MailIcon className="h-5 w-5 text-[var(--color-secondary)] flex-shrink-0" />
-                    <span className="text-[14px] md:text-[16px] text-[#F8F8F8] opacity-90">theteam@tobamsgroup.com</span>
+                    <span className="text-sm md:text-base text-[#F8F8F8] opacity-90">theteam@tobamsgroup.com</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <PhoneIcon className="h-5 w-5 text-[var(--color-secondary)] flex-shrink-0" />
-                    <span className="text-[14px] md:text-[16px] text-[#F8F8F8] opacity-90">+447886600748</span>
+                    <span className="text-sm md:text-base text-[#F8F8F8] opacity-90">+447886600748</span>
                   </li>
                 </ul>
               </div>
@@ -177,7 +177,7 @@ export const Footer = () => {
       <div className="border-t border-white/10 py-8">
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <p className="text-[14px] font-light leading-[24px] md:text-[16px]">
+            <p className="text-sm font-light leading-[24px] md:text-base">
               Copyright © Tobams Group, {currentYear}. All rights reserved.
             </p>
             <div className="flex gap-8 text-sm opacity-50">

@@ -20,20 +20,20 @@ const features = [
     desc: "You will attain a globally recognized certification, opening doors to new career opportunities and industry recognition.",
   },
 ];
-export const ConsultantSection = () => {
 
+export const ConsultantSection = () => {
   return (
-    <section className="bg-[#5712441A] py-16 lg:py-24 mb-[24px] md:mb-[40px]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+    <section className="bg-[#5712441A] py-16 lg:py-24 mb-6 md:mb-10">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         
-        <div className="mb-[12px]">
-          <h2 className="mb-5 font-display text-[24px] font-semibold leading-[130%] text-[var(--color-primary)] md:text-[30px]">
+        <div className="max-w-xl mb-3">
+          <h2 className="mb-5 font-display text-2xl font-semibold leading-[130%] text-[var(--color-primary)] md:text-3xl">
             Training The Consultant
           </h2>
-          <h3 className="mb-5 font-display text-[16px] font-semibold leading-[130%] text-[var(--color-primary)] md:text-[20px]">
+          <h3 className="mb-5 font-display text-base font-semibold leading-[130%] text-[var(--color-primary)] md:text-xl">
             Maximise Your Potential as a Certified Trainer:
           </h3>
-          <p className="text-[14px] mb-5 leading-[130%] font-regular text-[#151515] md:text-[18px]">
+          <p className="text-sm mb-8 leading-[130%] font-regular text-[#151515] md:text-lg">
             With the help of our Training Consultants program, take a revolutionary step toward 
             becoming a distinguished certified training consultant. Learn from professionals 
             in the field, immerse yourself in a thorough curriculum, and hone your training 
@@ -43,14 +43,14 @@ export const ConsultantSection = () => {
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-[16px] bg-[var(--color-primary)] p-[24px] mb-[32px]">
+        <div className="overflow-hidden rounded-2xl bg-[var(--color-primary)] p-6 mb-8">
           <div className="grid gap-x-12 gap-y-10 md:grid-cols-2">
             {features.map((feature, i) => (
               <div key={i} className="text-white">
-                <h4 className="mb-[12px] text-[16px] leading-[150%] font-bold md:text-[18px]">
+                <h4 className="mb-3 text-base leading-[150%] font-bold md:text-lg">
                   {feature.title}
                 </h4>
-                <p className="text-[14px] leading-relaxed opacity-90 md:text-[15px]">
+                <p className="text-sm leading-relaxed opacity-90 md:text-[15px]">
                   {feature.desc}
                 </p>
               </div>

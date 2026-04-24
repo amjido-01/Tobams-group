@@ -33,7 +33,7 @@ export const Navbar = () => {
       role="navigation"
     >
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
-        <div className="flex h-16 items-center justify-between py-[40px] md:h-[48px]">
+        <div className="flex h-16 items-center justify-between py-10 md:h-12">
           <Link
             href="/"
             className="flex flex-shrink-0 items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded-sm"
@@ -56,10 +56,10 @@ export const Navbar = () => {
               aria-haspopup="true"
               variant="primary"
               size="md"
-              className="gap-2 text-[18px]"
+              className="gap-2 text-lg"
             >
-              <User className="h-[24px] w-[24px] rounded-full border bg-[#DDD0DA] p-1 text-[var(--color-primary)]" />
-              <span className="pl-[8px]">Account</span>
+              <User className="h-6 w-6 rounded-full border bg-[#DDD0DA] p-1 text-[var(--color-primary)]" />
+              <span className="pl-2">Account</span>
               <ChevronDown className="h-5 w-5" />
             </Button>
 
@@ -67,7 +67,7 @@ export const Navbar = () => {
               id="take-assessment-btn"
               variant="secondary"
               size="md"
-              className="px-5 text-[18px]"
+              className="px-5 text-lg"
             >
               Take Assessment
             </Button>
@@ -77,7 +77,7 @@ export const Navbar = () => {
             id="mobile-menu-toggle"
             variant="dark"
             size="md"
-            className="border-[#F9FAFB] px-[8px] py-[10px] md:hidden"
+            className="border-[#F9FAFB] px-2 py-2.5 md:hidden"
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
@@ -95,7 +95,7 @@ export const Navbar = () => {
       <div className="hidden border-t">
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
           <ul
-            className="flex items-center justify-center gap-1 border-b border-[#DDD0DA] py-[10px]"
+            className="flex items-center justify-center gap-1 border-b border-[#DDD0DA] py-2.5"
             role="list"
           >
             {NAV_ITEMS.map((item, index) => (
@@ -104,7 +104,7 @@ export const Navbar = () => {
                   href={item.href}
                   id={`nav-item-${index}`}
                   className={`
-                    group relative flex cursor-pointer items-center whitespace-nowrap px-3 py-2.5 text-[18px] font-regular
+                    group relative flex cursor-pointer items-center whitespace-nowrap px-3 py-2.5 text-lg font-regular
                     text-[var(--color-nav-text)] transition-colors hover:text-[var(--color-main-text)]
                     focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]
                     ${index === 0 ? "text-[var(--color-primary)]" : ""}

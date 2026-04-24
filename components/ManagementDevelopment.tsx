@@ -11,15 +11,15 @@ const features = [
 export const ManagementDevelopment = () => {
 
   return (
-    <section className="mb-[24px] bg-white py-12 lg:py-20">
+    <section className="mb-6 bg-white py-12 lg:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
-        <div className="overflow-hidden rounded-[15px] bg-[#2C0922] p-5 md:p-10 lg:p-16">
-          <h2 className="mb-[20px] leading-[150%] block text-center font-display text-[16px] font-semibold text-white md:hidden">
+        <div className="overflow-hidden rounded-2xl bg-[#2C0922] p-5 md:p-10 lg:p-16">
+          <h2 className="mb-5 block text-center font-display text-base font-semibold leading-relaxed text-white md:hidden">
             Management Development Program
           </h2>
 
           <div className="grid items-center gap-8 md:grid-cols-2 lg:gap-16">
-            <div className="relative h-[250px] w-full overflow-hidden rounded-[16px] md:h-full">
+            <div className="relative h-[250px] w-full overflow-hidden rounded-2xl md:h-full">
               <Image
                 src="/program.png"
                 alt="Management Development Program"
@@ -30,11 +30,11 @@ export const ManagementDevelopment = () => {
             </div>
 
             <div className="text-white">
-              <h2 className="mb-6 hidden font-display text-[40px] font-semibold leading-tight md:block">
+              <h2 className="mb-6 hidden font-display text-4xl font-semibold leading-tight md:block">
                 Management Development Program
               </h2>
 
-              <div className="space-y-6 text-[14px] leading-[150%] font-regular text-white md:text-[18px]">
+              <div className="space-y-6 text-sm leading-relaxed font-regular text-white md:text-lg">
                 <p>
                   Tobams Group offers a comprehensive Management Development Program designed
                   to equip corporate organisations with the high-performing leaders they need to thrive.
@@ -51,10 +51,10 @@ export const ManagementDevelopment = () => {
                 {features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex leading-[150%] items-center gap-3 rounded-[12px] bg-[var(--color-shaded-purple)] px-3 py-2 transition-colors"
+                    className="flex items-center gap-3 rounded-xl bg-[var(--color-shaded-purple)] px-3 py-2 leading-relaxed transition-colors"
                   >
                     <Zap className="h-5 w-5 flex-shrink-0 fill-white text-white" />
-                    <span className="text-[14px] font-semibold md:text-[18px]">
+                    <span className="text-sm font-semibold md:text-lg">
                       {feature}
                     </span>
                   </li>

@@ -11,10 +11,10 @@ interface SubSectionProps {
   imageRounded?: string;
 }
 
-const TrainingSubSection = ({ title, description, imagePath, features, reverse, imageRounded = "rounded-[24px]" }: SubSectionProps) => {
+const TrainingSubSection = ({ title, description, imagePath, features, reverse, imageRounded = "rounded-3xl" }: SubSectionProps) => {
   return (
-    <div className="py-[24px] md:py-[64px]">
-      <h2 className="mb-[24px] block font-display text-[20px] font-semibold text-[var(--color-main-text)] md:hidden">
+    <div className="py-6 md:py-16">
+      <h2 className="mb-6 block font-display text-xl font-semibold text-[var(--color-main-text)] md:hidden">
         {title}
       </h2>
 
@@ -34,14 +34,14 @@ const TrainingSubSection = ({ title, description, imagePath, features, reverse, 
           <h2 className="mb-[21px] hidden font-display text-[32px] font-bold text-[var(--color-main-text)] md:block md:text-[40px] leading-[150%]">
             {title}
           </h2>
-          <p className="mb-[20px] md:mb-[19px] text-[14px] leading-relaxed text-[var(--color-gray-text)] font-regular md:text-[18px]">
+          <p className="mb-5 md:mb-[19px] text-sm leading-relaxed text-[var(--color-gray-text)] font-regular md:text-lg">
             {description}
           </p>
           <ul className="space-y-4 md:pl-4">
             {features.map((feature, i) => (
               <li key={i} className="flex items-start gap-3">
-                <Zap className="mt-1 h-[16px] w-[16px] flex-shrink-0 fill-[var(--color-spark)] text-[var(--color-spark)]" />
-                <span className="text-[14px] font-regular text-[var(--color-gray-text)] md:text-[18px]">
+                <Zap className="mt-1 h-4 w-4 flex-shrink-0 fill-[var(--color-spark)] text-[var(--color-spark)]" />
+                <span className="text-sm font-regular text-[var(--color-gray-text)] md:text-lg">
                   {feature}
                 </span>
               </li>
@@ -56,7 +56,7 @@ const TrainingSubSection = ({ title, description, imagePath, features, reverse, 
 
 export const TrainingSections = () => {
   return (
-    <section className="bg-white md:mb-[64px]">
+    <section className="bg-white md:mb-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
 
         <TrainingSubSection

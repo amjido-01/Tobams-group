@@ -85,7 +85,7 @@ export const Testimonials = () => {
                         <p className="text-sm text-gray-500">{testimonial.role}</p>
                       </div>
                     </div>
-                    <p className="text-[14px] md:text-[18px] leading-[150%] text-[var(--color-main-text)]">
+                    <p className="text-sm md:text-lg leading-[150%] text-[var(--color-main-text)]">
                       {testimonial.content}
                     </p>
                   </div>

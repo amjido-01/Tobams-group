@@ -14,9 +14,9 @@ const courses = [
 export const LMSSection = () => {
 
   return (
-    <section className="bg-[#5712441A] py-16 lg:py-24 mb-[24px] md:mb-[40px]">
+    <section className="bg-[#5712441A] py-16 lg:py-24 mb-6 md:mb-10">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
-        <h2 className="mb-[24px] leading-[150%] block font-display text-[20px] md:text-[40px] font-semibold text-[var(--color-primary)] md:hidden">
+        <h2 className="mb-6 leading-[150%] block font-display text-xl md:text-4xl font-semibold text-[var(--color-primary)] md:hidden">
           Learning Management System
         </h2>
 
@@ -36,8 +36,8 @@ export const LMSSection = () => {
               Learning Management System
             </h2>
 
-            <div className="rounded-2xl bg-[#5712441A] p-6 shadow-sm lg:p-8 mb-[24px] md:mb-[32px]">
-              <p className="mb-6 text-[14px] md:text-[18px] leading-relaxed text-[var(--color-main-text)] lg:text-base font-regular">
+            <div className="rounded-2xl bg-[#5712441A] p-6 shadow-sm lg:p-8 mb-6 md:mb-8">
+              <p className="mb-6 text-sm md:text-lg leading-relaxed text-[var(--color-main-text)] lg:text-base font-regular">
                 TG Academy is a hub of knowledge and skill-building resources designed to empower tech talents on their learning journey. From technical courses covering the latest programming languages and development frameworks to soft skills training in leadership, effective communication and project management, TG Academy offers a wide range of courses to cater to diverse learning needs. With accessible and interactive learning materials, individuals can enhance their skills and stay ahead in today's competitive tech landscape.
               </p>
 
@@ -47,14 +47,14 @@ export const LMSSection = () => {
 
               <ul className="grid grid-cols-1 gap-y-3 sm:grid-cols-3 lg:gap-x-2">
                 {courses.map((course) => (
-                  <li key={course} className="flex items-center text-[14px] md:text-[16px] font-regular leading-[150%] text-[var(--color-main-text)]">
+                  <li key={course} className="flex items-center text-sm md:text-base font-regular leading-[150%] text-[var(--color-main-text)]">
                     <span className="mr-2 h-1.5 w-1.5 rounded-full bg-[var(--color-primary)]" />
                     {course}
                   </li>
                 ))}
               </ul>
 
-              <div className="block md:hidden mt-[24px]">
+              <div className="block md:hidden mt-6">
                 <Button
                   href="#learn-more"
                   variant="primary"
@@ -72,7 +72,7 @@ export const LMSSection = () => {
                 href="#learn-more"
                 variant="primary"
                 size="md"
-                className="px-6 py-[12px] text-[14px] md:text-[18px]"
+                className="px-6 py-3 text-sm md:text-lg"
               >
                 Learn More <ArrowUpRight className="h-5 w-5" />
               </Button>
