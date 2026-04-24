@@ -61,7 +61,7 @@ export const TrainingSections = () => {
 
         <TrainingSubSection
           title="Corporate Trainings"
-          imagePath="/meetings.png"
+          imagePath="/meetings.jpg"
           reverse={true}
           imageRounded="rounded-tl-[30px] rounded-tr-[24px] rounded-bl-[40px] rounded-br-[23px] md:rounded-tl-[56px] md:rounded-tr-[24px] md:rounded-bl-[23px] md:rounded-br-[12px]"
           description="Empower your team with our customised Corporate Training programs designed to address the unique needs and objectives of your organisation. Our expert facilitators work closely with your team to deliver tailored learning experiences that align with your company's goals and values."
