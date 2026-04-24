@@ -19,7 +19,7 @@ const TrainingSubSection = ({ title, description, imagePath, features, reverse, 
       </h2>
 
       <div className={`flex flex-col gap-8 md:items-center lg:gap-16 ${reverse ? "md:flex-row-reverse" : "md:flex-row"}`}>
-        
+
         <div className={`relative aspect-[4/3] w-full overflow-hidden ${imageRounded} md:w-1/2`}>
           <Image
             src={imagePath}
@@ -58,10 +58,10 @@ export const TrainingSections = () => {
   return (
     <section className="bg-white md:mb-[64px]">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
-        
+
         <TrainingSubSection
           title="Corporate Trainings"
-          imagePath="/corperate.png"
+          imagePath="/meetings.png"
           reverse={true}
           imageRounded="rounded-tl-[30px] rounded-tr-[24px] rounded-bl-[40px] rounded-br-[23px] md:rounded-tl-[56px] md:rounded-tr-[24px] md:rounded-bl-[23px] md:rounded-br-[12px]"
           description="Empower your team with our customised Corporate Training programs designed to address the unique needs and objectives of your organisation. Our expert facilitators work closely with your team to deliver tailored learning experiences that align with your company's goals and values."
