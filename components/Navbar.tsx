@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu, User, X } from "lucide-react";
+import { Button } from "./ui/Button";
 
 interface NavItem {
   label: string;
@@ -49,28 +50,34 @@ export const Navbar = () => {
           </Link>
 
           <div className="hidden items-center gap-3 md:flex">
-            <button
+            <Button
               id="account-btn"
               aria-label="Account menu"
               aria-haspopup="true"
-              className="flex cursor-pointer items-center gap-2 rounded-md bg-[var(--color-primary)] px-4 py-[10px] text-[18px] font-semibold text-white transition-opacity hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]"
+              variant="primary"
+              size="md"
+              className="gap-2 text-[18px]"
             >
               <User className="h-[24px] w-[24px] rounded-full border bg-[#DDD0DA] p-1 text-[var(--color-primary)]" />
               <span className="pl-[8px]">Account</span>
               <ChevronDown className="h-5 w-5" />
-            </button>
+            </Button>
 
-            <button
+            <Button
               id="take-assessment-btn"
-              className="cursor-pointer rounded-md bg-[var(--color-secondary)] px-5 py-[10px] text-[18px] font-semibold text-white shadow-sm transition-opacity hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-secondary)]"
+              variant="secondary"
+              size="md"
+              className="px-5 text-[18px]"
             >
               Take Assessment
-            </button>
+            </Button>
           </div>
 
-          <button
+          <Button
             id="mobile-menu-toggle"
-            className="flex items-center justify-center rounded-md bg-[#151515] border-[#F9FAFB] px-[8px] py-[10px] text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] md:hidden"
+            variant="dark"
+            size="md"
+            className="border-[#F9FAFB] px-[8px] py-[10px] md:hidden"
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
@@ -81,7 +88,7 @@ export const Navbar = () => {
             ) : (
               <Menu className="h-6 w-6" aria-hidden="true" />
             )}
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -97,15 +104,15 @@ export const Navbar = () => {
                   href={item.href}
                   id={`nav-item-${index}`}
                   className={`
-                    group relative flex cursor-pointer items-center whitespace-nowrap px-3 py-2.5 text-sm font-medium
-                    text-[var(--color-nav-text)] transition-colors hover:text-[var(--color-primary)]
+                    group relative flex cursor-pointer items-center whitespace-nowrap px-3 py-2.5 text-[18px] font-regular
+                    text-[var(--color-nav-text)] transition-colors hover:text-[var(--color-main-text)]
                     focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]
                     ${index === 0 ? "text-[var(--color-primary)]" : ""}
                   `}
                   aria-current={index === 0 ? "page" : undefined}
                 >
                   {item.label}
-                  {item.hasDropdown && <ChevronDown className="ml-1 h-3.5 w-3.5" />}
+                  {item.hasDropdown && <ChevronDown className="ml-1 h-5 w-5 text-[var(--color-primary)]" />}
                   <span
                     className={`
                       absolute bottom-0 left-3 right-3 h-0.5 rounded-full bg-[var(--color-primary)]
@@ -145,20 +152,23 @@ export const Navbar = () => {
         </ul>
 
         <div className="flex flex-col gap-3 border-t border-gray-100 px-4 py-4">
-          <button
+          <Button
             id="mobile-account-btn"
-            className="flex items-center justify-center gap-2 rounded-md bg-[var(--color-primary)] py-3 text-sm font-semibold text-white"
+            variant="primary"
+            size="full"
+            className="gap-2"
           >
             <User className="h-5 w-5" aria-hidden="true" />
             Account
             <ChevronDown className="h-4 w-4" />
-          </button>
-          <button
+          </Button>
+          <Button
             id="mobile-take-assessment-btn"
-            className="w-full rounded-md bg-[var(--color-secondary)] py-3 text-sm font-semibold text-white"
+            variant="secondary"
+            size="full"
           >
             Take Assessment
-          </button>
+          </Button>
         </div>
       </div>
     </nav>

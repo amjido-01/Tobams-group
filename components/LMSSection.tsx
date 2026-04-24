@@ -2,16 +2,17 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { Button } from "./ui/Button";
 
+const courses = [
+  "Business Analysis",
+  "Design Thinking",
+  "Effective Communication",
+  "Entrepreneurship",
+  "Career Development",
+  "Business Model",
+];
 export const LMSSection = () => {
-  const courses = [
-    "Business Analysis",
-    "Design Thinking",
-    "Effective Communication",
-    "Entrepreneurship",
-    "Career Development",
-    "Business Model",
-  ];
 
   return (
     <section className="bg-[#5712441A] py-16 lg:py-24 mb-[24px] md:mb-[40px]">
@@ -20,13 +21,13 @@ export const LMSSection = () => {
           Learning Management System
         </h2>
 
-        <div className="grid items-center md:px-[50px] gap-12 md:grid-cols-2">
-          <div className="relative mx-auto aspect-square w-full max-w-[450px] overflow-hidden rounded-full md:mx-0 lg:max-w-[560px]">
+        <div className="grid items-center gap-12 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr]">
+          <div className="relative mx-auto aspect-square w-full max-w-[450px] overflow-hidden rounded-full md:mx-0 md:max-w-[500px] lg:max-w-[720px]">
             <Image
               src="/management.png"
               alt="Professional team"
               fill
-              sizes="(max-width: 768px) 100vw, 40vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -55,23 +56,27 @@ export const LMSSection = () => {
               </ul>
 
               <div className="block md:hidden mt-[24px]">
-                <Link
+                <Button
                   href="#learn-more"
-                  className="inline-flex items-center gap-2 rounded-md bg-[var(--color-primary)] px-6 py-[12px] text-[14px] md:text-[18px] font-semibold text-white transition-all hover:opacity-90 active:scale-95"
+                  variant="primary"
+                  size="md"
+                  className="px-6 py-[12px] text-[14px]"
                 >
                   Learn More <ArrowUpRight className="h-5 w-5" />
-                </Link>
+                </Button>
               </div>
 
             </div>
 
             <div className="hidden md:block">
-              <Link
+              <Button
                 href="#learn-more"
-                className="inline-flex items-center gap-2 rounded-md bg-[var(--color-primary)] px-6 py-[12px] text-[14px] md:text-[18px] font-semibold text-white transition-all hover:opacity-90 active:scale-95"
+                variant="primary"
+                size="md"
+                className="px-6 py-[12px] text-[14px] md:text-[18px]"
               >
                 Learn More <ArrowUpRight className="h-5 w-5" />
-              </Link>
+              </Button>
             </div>
           </div>
         </div>

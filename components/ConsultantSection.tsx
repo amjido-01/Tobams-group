@@ -1,26 +1,27 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
+import { Button } from "./ui/Button";
 
+const features = [
+  {
+    title: "Expert-Led Learning",
+    desc: "Gain insight from seasoned professionals in the field as they mentor you through the subtleties of business analysis.",
+  },
+  {
+    title: "Interactive Workshops",
+    desc: "Engage in hands-on workshops designed to enhance your training capabilities and provide practical insights.",
+  },
+  {
+    title: "Comprehensive Curriculum",
+    desc: "Access a robust curriculum that covers fundamental principles and advanced methodologies, ensuring a well-rounded understanding.",
+  },
+  {
+    title: "Global Recognition",
+    desc: "You will attain a globally recognized certification, opening doors to new career opportunities and industry recognition.",
+  },
+];
 export const ConsultantSection = () => {
-  const features = [
-    {
-      title: "Expert-Led Learning",
-      desc: "Gain insight from seasoned professionals in the field as they mentor you through the subtleties of business analysis.",
-    },
-    {
-      title: "Interactive Workshops",
-      desc: "Engage in hands-on workshops designed to enhance your training capabilities and provide practical insights.",
-    },
-    {
-      title: "Comprehensive Curriculum",
-      desc: "Access a robust curriculum that covers fundamental principles and advanced methodologies, ensuring a well-rounded understanding.",
-    },
-    {
-      title: "Global Recognition",
-      desc: "You will attain a globally recognized certification, opening doors to new career opportunities and industry recognition.",
-    },
-  ];
 
   return (
     <section className="bg-[#5712441A] py-16 lg:py-24 mb-[24px] md:mb-[40px]">
@@ -59,14 +60,16 @@ export const ConsultantSection = () => {
         </div>
 
         <div className="">
-          <Link
+          <Button
             href="#learn-more"
-            className="inline-flex items-center gap-2 rounded-md bg-[var(--color-primary)] px-8 py-3 text-base font-semibold text-white transition-all hover:opacity-90"
+            variant="primary"
+            size="md"
+            className="gap-2 px-8 py-3 text-base"
           >
             Learn More 
             <ChevronRight className="h-5 w-5 md:hidden" />
-            <ArrowUpRight  className="h-5 w-5 hidden md:block"/>
-          </Link>
+            <ArrowUpRight className="h-5 w-5 hidden md:block"/>
+          </Button>
         </div>
 
       </div>

@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { Zap } from "lucide-react";
 
+const features = [
+  "Enhanced Leadership Skills",
+  "Improved Employee Engagement",
+  "Stronger Organisational Culture",
+  "Sustainable Growth",
+];
 export const ManagementDevelopment = () => {
-  const features = [
-    "Enhanced Leadership Skills",
-    "Improved Employee Engagement",
-    "Stronger Organisational Culture",
-    "Sustainable Growth",
-  ];
 
   return (
     <section className="mb-[24px] bg-white py-12 lg:py-20">

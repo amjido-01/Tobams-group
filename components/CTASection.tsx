@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Button } from "./ui/Button";
 
 export const CTASection = () => {
   return (
@@ -22,12 +23,14 @@ export const CTASection = () => {
             </h2>
           </div>
 
-          <Link
+          <Button
             href="#consultation"
-            className="rounded-md bg-white px-[24px] py-[13px] text-[14px] font-semibold text-[var(--color-primary)] transition-all hover:bg-gray-100 active:scale-95 md:text-[18px]"
+            variant="white"
+            size="lg"
+            className="px-[24px] py-[13px] text-[14px] md:text-[18px]"
           >
             Book a Consultation
-          </Link>
+          </Button>
         </div>
       </div>
     </section>

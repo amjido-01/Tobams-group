@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Zap, ArrowUpRight } from "lucide-react";
+import { Button } from "./ui/Button";
 
 export const CEOSection = () => {
   const features = [
@@ -62,12 +63,14 @@ export const CEOSection = () => {
             </div>
 
             <div className="mt-8">
-              <Link
+              <Button
                 href="#learn-more"
-                className="inline-flex items-center gap-2 rounded-md bg-[var(--color-primary)] px-8 py-3 text-[14px] font-semibold text-white transition-all hover:opacity-90 md:text-[16px]"
+                variant="primary"
+                size="md"
+                className="px-8 py-3 text-[14px] md:text-[16px]"
               >
                 Learn More <ArrowUpRight className="h-5 w-5" />
-              </Link>
+              </Button>
             </div>
           </div>
 
