@@ -72,7 +72,7 @@ export const Testimonials = () => {
                 >
                   <div className="h-full rounded-2xl bg-white p-6 shadow-sm border-l-4 border-[#E31B54] flex flex-col">
                     <div className="mb-6 flex items-center gap-4">
-                      <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-yellow-400">
+                      <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-full">
                         <Image
                           src={testimonial.image}
                           alt={testimonial.name}
@@ -99,19 +99,19 @@ export const Testimonials = () => {
               variant="ghost"
               size="icon"
               onClick={prevSlide}
-              className="h-12 w-12 rounded-full bg-[#FFEBF0] text-[#E31B54] hover:bg-[#FFD1DD]"
+              className="h-10 w-10 rounded-full bg-[#FFEBF0] text-[#E31B54] hover:bg-[#FFD1DD]"
               aria-label="Previous testimonial"
             >
-              <ChevronLeft className="h-6 w-6" />
+              <ChevronLeft className="h-5 w-5" />
             </Button>
             <Button
               variant="ghost"
               size="icon"
               onClick={nextSlide}
-              className="h-12 w-12 rounded-full bg-[#FFEBF0] text-[#E31B54] hover:bg-[#FFD1DD]"
+              className="h-10 w-10 rounded-full bg-[#FFEBF0] text-[#E31B54] hover:bg-[#FFD1DD]"
               aria-label="Next testimonial"
             >
-              <ChevronRight className="h-6 w-6" />
+              <ChevronRight className="h-5 w-5" />
             </Button>
           </div>
         </div>
