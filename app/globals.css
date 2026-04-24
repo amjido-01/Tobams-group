@@ -9,18 +9,13 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* ── Fonts ───────────────────────────────────────── */
   --font-sans: var(--font-nunito-sans);
-  /* body / UI text  */
   --font-display: var(--font-nunito);
-  /* headings        */
 
-  /* ── Breakpoints (per assessment spec) ───────────── */
   --breakpoint-sm: 425px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1280px;
 
-  /* ── Tobams Group Official Brand Colors ──────────── */
   --color-primary: #571244;
   /* Hue/Primary     – deep maroon   */
   --color-secondary: #EF4353;
@@ -30,7 +25,6 @@
   --color-purple-10: #DDD0DA;
   /* Shades/Purple 10% – light tint  */
 
-  /* ── Semantic aliases ────────────────────────────── */
   --color-nav-text: #1a1a1a;
   --color-main-text:  #151515;
   --color-nav-muted: #555555;
