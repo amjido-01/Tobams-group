@@ -36,7 +36,7 @@ export const Hero = () => {
           Training and Development
         </h1>
 
-        <p className="mb-8 md:mb-10 text-base text-[#ffffff] md:text-lg lg:text-xl font-semibold opacity-90 max-w-2xl">
+        <p className="mb-8 md:mb-10 text-base text-[#ffffff] md:text-lg lg:text-xl font-semibold opacity-90">
           Our comprehensive range of programs and resources is designed to enhance skills, broaden knowledge, and propel careers forward in today's ever-evolving landscape.
         </p>
         <Button
